@@ -15,29 +15,22 @@
 
             <header>
 
-                <div id="nav1">
+                <div id="nav_container">
 
                     <div id="logo">
                         <img src="images/logo/Reservia@3x.png" alt="Logo Reservia" /> 
                     </div>
     
                     <nav> 
-                        <ul>
+                        <ul id="nav1">
                             <li><a href="">Hébergements</a></li>
                             <li><a href="">Activités</a></li>
+                        </ul>
+                        <ul id="nav2">
                             <li><a href="">S'inscrire</a></li>
                         </ul>
                     </nav> 
 
-                </div>
-
-                <div id="nav2">
-                    <nav> 
-                        <ul>
-                            <li><a href="">Hébergements</a></li>
-                            <li><a href="">Activités</a></li>
-                        </ul>
-                    </nav>    
                 </div>
                 
             </header>
@@ -49,33 +42,48 @@
                 <div>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
+
                     <form method="post" action="traitement.php">
                         <div id="formulaire_recherche">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <div id="picto_gps">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
                             <input type="text" name="ville" id="ville" placeholder="Marseille, France"/>
-                            <input type="submit" value="Rechercher" id="rechercher"/>
+                            <div id="picto_loupe">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <!--<input type="submit" value="Rechercher" id="rechercher"/>-->
                         </div>
                     </form>
+
                     <div id="container_filtres">
                         
-                        <div class="filtre" id="titre_filtres">
+                        <div id="titre_filtres">
                             <p>Filtres</p>
                         </div>
                         <div id="FILTRES"> 
                             <div class="filtre">
-                                <i class="fas fa-money-bill-wave"></i>
+                                <div class="picto_filtres">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
                                 <p>Economique</p>
                             </div>
                             <div class="filtre">
-                                <i class="fas fa-child"></i>
+                                <div class="picto_filtres">
+                                    <i class="fas fa-child"></i>
+                                </div>
                                 <p>Familial</p>
                             </div>
                             <div class="filtre">
-                                <i class="fas fa-heart"></i>
+                                <div class="picto_filtres">
+                                    <i class="fas fa-heart"></i>
+                                </div>
                                 <p>Romantique</p>
                             </div>
                             <div class="filtre">
-                                <i class="fas fa-dog"></i>
+                                <div class="picto_filtres">
+                                    <i class="fas fa-dog"></i>
+                                </div>
                                 <p>Animaux autorisés</p>
                             </div>
                         </div>
@@ -84,9 +92,9 @@
                     </div>
 
                     <div id="container_info">
-                        <p id="picto_info">
+                        <div id="picto_info">
                             <i class="fas fa-info"></i>
-                        </p>
+                        </div>
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
 
@@ -99,7 +107,9 @@
                 <aside>
                     <div id="titre_aside">
                         <h1>Les plus populaires</h1>
-                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <i class="fas fa-chart-line"></i>
+                        </div>
                     </div>
 
                     <div>
