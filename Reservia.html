@@ -53,30 +53,33 @@
                         <div id="formulaire_recherche">
                             <i class="fas fa-map-marker-alt"></i>
                             <input type="text" name="ville" id="ville" placeholder="Marseille, France"/>
-                            <input type="submit" value="Rechercher" />
+                            <input type="submit" value="Rechercher" id="rechercher"/>
                         </div>
                     </form>
                     <div id="container_filtres">
                         
-                        <div class="filtre">
+                        <div class="filtre" id="titre_filtres">
                             <p>Filtres</p>
                         </div>
-                        <div class="filtre">
-                            <i class="fas fa-money-bill-wave"></i>
-                            <p>Economique</p>
+                        <div id="FILTRES"> 
+                            <div class="filtre">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <p>Economique</p>
+                            </div>
+                            <div class="filtre">
+                                <i class="fas fa-child"></i>
+                                <p>Familial</p>
+                            </div>
+                            <div class="filtre">
+                                <i class="fas fa-heart"></i>
+                                <p>Romantique</p>
+                            </div>
+                            <div class="filtre">
+                                <i class="fas fa-dog"></i>
+                                <p>Animaux autorisés</p>
+                            </div>
                         </div>
-                        <div class="filtre">
-                            <i class="fas fa-child"></i>
-                            <p>Familial</p>
-                        </div>
-                        <div class="filtre">
-                            <i class="fas fa-heart"></i>
-                            <p>Romantique</p>
-                        </div>
-                        <div class="filtre">
-                            <i class="fas fa-dog"></i>
-                            <p>Animaux autorisés</p>
-                        </div> 
+                         
 
                     </div>
 
@@ -93,6 +96,43 @@
 
             <section id="section2">
 
+                <aside>
+                    <div id="titre_aside">
+                        <h1>Les plus populaires</h1>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+
+                    <div>
+                        <div id="hebergement7" class="cartouche_hebergement_pop">
+                            <div class="hebergement_pop_img">
+                                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hébergement 7" />
+                            </div>
+                            <div class="hebergement_pop_texte">
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de <strong>128€</strong></p>
+                            </div>
+                        </div>
+                        <div id="hebergement8" class="cartouche_hebergement_pop">
+                            <div class="hebergement_pop_img">
+                                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hébergement 8" />
+                            </div>
+                            <div class="hebergement_pop_texte">
+                                <h3>Au coeur de l'eau </br>Chambres d'hôtes</h3>
+                                <p>Nuit à partir de <strong>71€</strong></p>
+                            </div>
+                        </div>
+                        <div id="hebergement9" class="cartouche_hebergement_pop">
+                            <div class="hebergement_pop_img">
+                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hébergement 9" />
+                            </div>
+                            <div class="hebergement_pop_texte">
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <p>Nuit à partir de <strong>68€</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                
                 <article>
 
                     <h1>Hébergements à Marseille</h1>
@@ -161,42 +201,7 @@
 
                 </article>
 
-                <aside>
-                    <div>
-                        <h1>Les plus populaires</h1>
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-
-                    <div>
-                        <div id="hebergement7" class="cartouche_hebergement_pop">
-                            <div class="hebergement_pop_img">
-                                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hébergement 7" />
-                            </div>
-                            <div class="hebergement_pop_texte">
-                                <h3>Hôtel Le soleil du matin</h3>
-                                <p>Nuit à partir de <strong>128€</strong></p>
-                            </div>
-                        </div>
-                        <div id="hebergement8" class="cartouche_hebergement_pop">
-                            <div class="hebergement_pop_img">
-                                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hébergement 8" />
-                            </div>
-                            <div class="hebergement_pop_texte">
-                                <h3>Au coeur de l'eau </br>Chambres d'hôtes</h3>
-                                <p>Nuit à partir de <strong>71€</strong></p>
-                            </div>
-                        </div>
-                        <div id="hebergement9" class="cartouche_hebergement_pop">
-                            <div class="hebergement_pop_img">
-                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hébergement 9" />
-                            </div>
-                            <div class="hebergement_pop_texte">
-                                <h3>Hôtel Tout bleu et Blanc</h3>
-                                <p>Nuit à partir de <strong>68€</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
+                
 
             </section>
 

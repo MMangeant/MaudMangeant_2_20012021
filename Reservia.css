@@ -127,15 +127,27 @@ nav a:hover{
 #container_filtres{
     display: flex;
     margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+#FILTRES{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .filtre{
     display: flex;
     align-items: center;
-
-    //border: 1px solid grey;
+    border: 1px solid grey;
     height: 40px;
     border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#titre_filtres{
+    border: none;
+    font-weight: bold;
 }
 
 .filtre i{
@@ -146,7 +158,14 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
+
+.filtre p{
+    padding : 10px 20px;
+    font-weight: bold;
+}
+
 
 #container_info{
     display: flex;
@@ -158,14 +177,38 @@ nav a:hover{
     width: 20px;
     height: 20px;
     text-align: center;
+    margin-right: 20px;
 }
 
+#formulaire_recherche{
+    display: flex;
+    border-radius: 50px;
+    height: 30px;
+}
+
+
+#formulaire_recherche i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 30px;
+    border-radius: 20px 0 0 20px;
+}
+
+#rechercher{
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-radius:  0 20px 20px 0 ;
+}
 
 
 /*      Section 2     */
 
-#section2{
-   
+#section2 h1{
+   padding-left: 20px;
+   padding-top: 20px;
 }
 
 article{
@@ -224,6 +267,11 @@ aside{
     padding-left: 20px;
 }
 
+#titre_aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /*      Section 3     */
 
@@ -249,6 +297,12 @@ aside{
 
 footer{
     background-color: #F2F2F2;
+    width: 100%;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
 }
 
 /* ---------------------------------------- */
@@ -263,6 +317,7 @@ footer{
 
     #nav2 nav ul{
         display: none;
+        
     }
 
     
