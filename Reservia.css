@@ -298,10 +298,10 @@ article{
 
 .cartouche_hebergement{
     background-color: white;
-    margin: 15px;
+    margin: 15px auto;
     padding: 5px;
     border-radius: 20px; 
-    width: 250px;
+    width: 90%;
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .1);
 }
 
@@ -323,10 +323,10 @@ aside{
 
 .cartouche_hebergement_pop{
     background-color: white;
-    margin: 15px;
+    margin: 15px auto;
     padding: 5px;
     border-radius: 20px; 
-    width: 300px;
+    width: 90%;
     height: 110px;
     display: flex;
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .1);
@@ -354,10 +354,10 @@ aside{
 
 .cartouche_activite{
     background-color: white;
-    margin: 15px;
+    margin: 15px auto;
     padding: 5px;
     border-radius: 20px; 
-    width: 250px;
+    width: 90%;
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .1);
 }
 
@@ -453,5 +453,26 @@ footer ul{
     #section1 h1{
         padding-top: 20px;
     }
+
+/*      Aside     */
+
+    .cartouche_hebergement_pop{
+        margin: 15px;
+        width: 300px;
+}
+
+/*      Section 2     */
+
+    .cartouche_hebergement{
+        margin: 15px;
+        width: 250px;
+}
+
+/*      Section 3     */
+    
+    .cartouche_activite{
+        margin: 15px;
+        width: 250px;
+}
 
 }
