@@ -62,25 +62,54 @@ nav ul{
 nav a{
     text-decoration: none;
     color: grey;
+    padding: 0 20px 33px 20px;
 }
 
 nav a:hover{
     text-decoration: none;
-    border-top : 2px solid #0065FC;
-    padding-top: 30px;
+    /*border-bottom : 2px solid #0065FC;*/
+    padding: 0 20px 33px 20px;
     color: #0065FC;
 }
+
+
+#nav1::before{
+    content: "";
+    border-bottom: 2px solid #d9d9d9;
+    width: 100%;
+    position: absolute;
+    top: 44px;
+}
+
+
+nav li:nth-child(1):hover::before{
+    content: "";
+    border-bottom: 2px solid #0065FC;
+    width: 50%;
+    position: absolute;
+    top: 44px;
+    left: 0;
+}
+
+nav li:nth-child(2):hover::before{
+    content: "";
+    border-bottom: 2px solid #0065FC;
+    width: 50%;
+    position: absolute;
+    top: 44px;
+    right: 0;
+}
+
 
 nav li{
     padding-top: 10px;
 }
 
+
 #nav2{
     font-weight: bold;
     color: #0065FC;
     order: 1;
-
-
 }
 
 #nav1{
@@ -108,7 +137,7 @@ nav li{
 
 
 #section1 h1{
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .fa-money-bill-wave{
@@ -392,18 +421,37 @@ footer ul{
     nav a{
         text-decoration: none;
         color: grey;
+        padding: 33px 20px 0 20px;
     }
     
     nav a:hover{
         text-decoration: none;
         border-top : 2px solid #0065FC;
-        padding-top: 30px;
+        border-bottom : none;
+        padding: 33px 20px 0 20px;
         color: #0065FC;
     }
     
     nav li{
-        padding-left: 60px;
-        padding-top: 10px;
+        margin-left: 30px;
     }
-    
+
+    #nav1::before{
+        content: "";
+       display: none;
+    }
+
+    nav li:hover::before{
+        content: "";
+        display: none;
+    }
+
+
+
+/*      Section 1     */
+
+    #section1 h1{
+        padding-top: 20px;
+    }
+
 }
