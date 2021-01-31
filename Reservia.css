@@ -293,9 +293,12 @@ nav li{
 /*      Section 2     */
 
 
+.star-bleu{
+    color: #0065FC;
+}
 
-.container_hebergements{
-        
+.star-gris{
+    color: #d9d9d9;
 }
 
 .cartouche_hebergement{
@@ -318,7 +321,7 @@ nav li{
 /*      Aside     */
 
 aside{
-    background-color: rgba(242, 242, 242, 0.788);
+    background-color: #F2F2F2;
 }
 
 
@@ -326,7 +329,7 @@ aside{
     background-color: white;
     padding: 5px;
     border-radius: 20px; 
-    height: 110px;
+    height: 150px;
     display: flex;
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .1);
     margin-bottom: 20px;
@@ -340,7 +343,8 @@ aside{
 }
 
 .hebergement_pop_texte{
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
 }
 
 #titre_aside{
