@@ -34,13 +34,17 @@ body{
     padding: 30px 0;
 }
 
-.taille_perso{
+.container_general{
     width: 90%;
     margin:auto;
-    padding: 20px
+    padding: 20px 0;
 }
 
 h1{
+    font-size: 1.5em;
+}
+
+h2{
     font-size: 1.5em;
 }
 
@@ -176,6 +180,7 @@ nav li{
 
 .fa-info{
     color: #0065FC;
+    font-size: 13px;
 }
 
 .fa-search{
@@ -306,6 +311,10 @@ nav li{
     font-size: 18px;
 }
 
+#ville:focus{
+    outline: none;
+}
+
 
 /*      Section 2     */
 
@@ -352,6 +361,7 @@ aside{
     display: flex;
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .1);
     margin-bottom: 20px;
+    width: auto;
 }
 
 .hebergement_pop_img img{
@@ -381,6 +391,7 @@ aside{
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .1);
     margin-bottom: 20px;
 }
+
 
 .activite_img img{
     border-radius: 20px 20px 0 0;
@@ -421,7 +432,7 @@ footer ul{
         padding: 10px 5%;
     }
 
-    .taille_perso{
+    .container_general{
         width: auto;
         margin: auto;
         padding: 20px 20px;
@@ -498,10 +509,6 @@ footer ul{
         padding: 0 0;
     }
 
-    #section1 .taille_perso{
-        padding: 20px 0;
-    }
-
     #section1 h1{
         padding-top: 20px;
     }
@@ -511,27 +518,36 @@ footer ul{
         margin: 0;
     }
 
-/*      Aside     */
-
-    .cartouche_hebergement_pop{
-        width: 300px;
-    }
-
-    aside{
-        background-color: rgba(242, 242, 242, 0.788);
-        border-radius: 30px;
-    }   
-
 /*      Section 2     */
 
     article{
         background-color: #F2F2F2;
         border-radius: 30px;
+        order: 1;
+    }
+
+    .container_hebergements{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #section2{
+        display: flex;
     }
 
     .cartouche_hebergement{
         width: 250px;
     }
+
+    .cartouche_hebergement_pop{
+        width: 350px;
+    }
+
+    aside{
+        background-color: rgba(242, 242, 242, 0.788);
+        border-radius: 30px;
+        order: 2;
+    } 
 
 /*      Section 3     */
     
@@ -539,8 +555,11 @@ footer ul{
         width: 250px;
     }
 
-    #section3 .taille_perso{
-        padding: 20px 0;
+    #container_activites{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 400px;
     }
 
 }
