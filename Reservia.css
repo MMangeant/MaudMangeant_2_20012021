@@ -48,6 +48,10 @@ h2{
     font-size: 1.5em;
 }
 
+h3{
+    font-size: 17px;
+}
+
 /* ---------------------------------------- */
 /* ==              HEADER               */
 /*---------------------------------------- */
@@ -180,7 +184,7 @@ nav li{
 
 .fa-info{
     color: #0065FC;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .fa-search{
@@ -190,6 +194,7 @@ nav li{
 #container_filtres{
     display: flex;
     margin-top: 20px;
+    margin-left: 10px;
     flex-wrap: wrap;
 }
 
@@ -240,7 +245,7 @@ nav li{
 #container_info{
     display: flex;
     align-items: baseline;
-    
+    margin: 20px 10px;
 
 }
 
@@ -308,7 +313,7 @@ nav li{
 #ville::placeholder{
     color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #ville:focus{
@@ -422,6 +427,15 @@ footer ul{
     padding: 5%;
 }
 
+.colonne_footer{
+    padding-right: 200px;
+    padding-bottom: 10px;
+}
+
+footer li{
+    padding: 7px 0;
+}
+
 /* ---------------------------------------- */
 /* ==              RESPONSIVE               */
 /*---------------------------------------- */
@@ -518,12 +532,23 @@ footer ul{
         margin: 0;
     }
 
+    #section1 .container_general{
+        padding: 0;
+    }
+
+    #titre_filtres{
+        padding-right: 20px;
+    }
+
+
+
 /*      Section 2     */
 
     article{
         background-color: #F2F2F2;
         border-radius: 30px;
         order: 1;
+        margin-right: 40px;
     }
 
     .container_hebergements{
@@ -536,11 +561,11 @@ footer ul{
     }
 
     .cartouche_hebergement{
-        width: 250px;
+        width: 230px;
     }
 
     .cartouche_hebergement_pop{
-        width: 350px;
+        width: 330px;
     }
 
     aside{
@@ -556,10 +581,39 @@ footer ul{
     }
 
     #container_activites{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        height: 400px;
+        display: flex;
+        justify-content: space-between;
     }
+
+    #activite1_img img{
+        height: 307px;
+    }
+
+    #activite4_img img{
+        height: 307px;
+    }
+
+    #section3 .container_general{
+        padding: 20px 0;
+    }
+
+
+/*      Footer     */
+
+    #container_footer{
+        display: flex;
+    }
+
+    .colonne_footer{
+        padding-right: 200px;
+    }
+
+    footer li{
+        padding: 7px 0;
+    }
+
+
+
+
 
 }
