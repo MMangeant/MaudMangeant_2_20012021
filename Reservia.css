@@ -271,13 +271,13 @@ nav li{
     margin: 30px auto;
 }
 
-#formulaire_recherche input{
+#ville{
     border: none;
-    margin-left: 20%;
+    margin-left: 65px;
 }
 
 
-#formulaire_recherche #picto_gps{
+#picto_gps{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,7 +289,7 @@ nav li{
     border-radius: 13px 0 0 13px;
 }
 
-#formulaire_recherche #picto_loupe{
+#picto_loupe i{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,12 +303,10 @@ nav li{
     border-radius: 13px ;
 }
 
-#rechercher{
-    background-color: #0065FC;
-    color: white;
-    border: none;
-    border-radius:  0 20px 20px 0 ;
+#picto_loupe p{
+    display: none;
 }
+
 
 #ville::placeholder{
     color: black;
@@ -323,6 +321,11 @@ nav li{
 
 /*      Section 2     */
 
+#afficher_plus{
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 20px;
+}
 
 .star-bleu{
     color: #0065FC;
@@ -350,6 +353,14 @@ nav li{
 .hebergement_texte{
     margin: 5%;
 }
+
+.hebergement_texte h3, p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+
 
 /*      Aside     */
 
@@ -408,6 +419,20 @@ aside{
 .cartouche_activite h3{
     margin-left: 5%;
 }
+
+.container_2_activites{
+    display: flex;
+    flex-direction: column;
+}
+
+#activite2{
+    flex: 1;
+}
+
+#activite3{
+    flex: 2;
+}
+
 
 /* ---------------------------------------- */
 /* ==              FOOTER               */
@@ -528,7 +553,7 @@ footer li{
     }
 
     #formulaire_recherche{
-        width: 300px;
+        width: 400px;
         margin: 0;
     }
 
@@ -540,7 +565,36 @@ footer li{
         padding-right: 20px;
     }
 
-
+    #picto_loupe i{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        background-color: #0065FC;
+        color: white;
+        border: none;
+        width: 50px;
+        height: 100%;
+        border-radius: 13px ;
+    }
+    
+    #picto_loupe p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-weight: bold;
+        background-color: #0065FC;
+        color: white;
+        border: none;
+        height: 100%;
+        width: 130px;
+        border-radius: 0 13px 13px 0;
+        margin: 0;
+    }
 
 /*      Section 2     */
 
@@ -561,7 +615,8 @@ footer li{
     }
 
     .cartouche_hebergement{
-        width: 230px;
+        width: 220px;
+        margin: 15px;
     }
 
     .cartouche_hebergement_pop{
