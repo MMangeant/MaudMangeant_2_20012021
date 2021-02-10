@@ -474,7 +474,7 @@ footer li{
     .container_general{
         width: auto;
         margin: auto;
-        padding: 20px 20px;
+        padding: 20px 30px;
     }
 
 
@@ -563,6 +563,7 @@ footer li{
 
     #titre_filtres{
         padding-right: 20px;
+        margin: auto 0;
     }
 
     #picto_loupe i{
@@ -611,7 +612,8 @@ footer li{
     }
 
     #section2{
-        display: flex;
+        display: grid;
+        grid-template-columns: 65% 35%;
     }
 
     .cartouche_hebergement{
@@ -621,6 +623,7 @@ footer li{
 
     .cartouche_hebergement_pop{
         width: 330px;
+        margin: 25px auto;
     }
 
     aside{
