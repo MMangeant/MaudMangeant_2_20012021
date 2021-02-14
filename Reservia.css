@@ -31,7 +31,7 @@ body{
 }
 
 #bloc_page{
-    padding: 30px 0;
+    padding: 0;
 }
 
 .container_general{
@@ -94,7 +94,7 @@ nav a{
 nav a:hover{
     text-decoration: none;
     /*border-bottom : 2px solid #0065FC;*/
-    padding: 0 20px 33px 20px;
+    padding: 0 20px 26px 20px;
     color: #0065FC;
 }
 
@@ -324,7 +324,6 @@ nav li{
 #afficher_plus{
     font-weight: bold;
     padding-top: 10px;
-    margin-left: 20px;
 }
 
 .star-bleu{
@@ -335,12 +334,16 @@ nav li{
     color: #d9d9d9;
 }
 
+.container_hebergements{
+    
+}
+
 .cartouche_hebergement{
     background-color: white;
     padding: 5px;
     border-radius: 20px; 
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .1);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .hebergement_img img{
@@ -376,7 +379,7 @@ aside{
     height: 150px;
     display: flex;
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .1);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: auto;
 }
 
@@ -402,10 +405,12 @@ aside{
 
 .cartouche_activite{
     background-color: white;
-    padding: 5px;
+    /*padding: 5px;*/
     border-radius: 20px; 
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .1);
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -423,14 +428,15 @@ aside{
 .container_2_activites{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #activite2{
-    flex: 1;
+
 }
 
 #activite3{
-    flex: 2;
+ 
 }
 
 
@@ -453,7 +459,6 @@ footer ul{
 }
 
 .colonne_footer{
-    padding-right: 200px;
     padding-bottom: 10px;
 }
 
@@ -468,7 +473,7 @@ footer li{
 @media all and (min-width: 480px){
 
     #bloc_page{
-        padding: 10px 5%;
+        padding: 0 3%;
     }
 
     .container_general{
@@ -522,7 +527,7 @@ footer li{
         text-decoration: none;
         border-top : 2px solid #0065FC;
         border-bottom : none;
-        padding: 33px 20px 0 20px;
+        padding: 26px 20px 0 20px;
         color: #0065FC;
     }
     
@@ -603,44 +608,50 @@ footer li{
         background-color: #F2F2F2;
         border-radius: 30px;
         order: 1;
-        margin-right: 40px;
+        width: 65%;
     }
 
     .container_hebergements{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
     }
 
     #section2{
-        display: grid;
-        grid-template-columns: 65% 35%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .cartouche_hebergement{
-        width: 220px;
-        margin: 15px;
+        width: 29%;
     }
 
     .cartouche_hebergement_pop{
-        width: 330px;
-        margin: 25px auto;
+        /*width: 330px;*/
     }
 
     aside{
         background-color: rgba(242, 242, 242, 0.788);
         border-radius: 30px;
         order: 2;
+        width: 32%;
     } 
 
 /*      Section 3     */
     
     .cartouche_activite{
-        width: 250px;
+        width: 90%;
     }
 
-    #container_activites{
+    .container_2_activites{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+    }
+    
+    #container_activites{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
     }
 
     #activite1_img img{
@@ -660,11 +671,9 @@ footer li{
 
     #container_footer{
         display: flex;
+        justify-content: space-around;
     }
 
-    .colonne_footer{
-        padding-right: 200px;
-    }
 
     footer li{
         padding: 7px 0;
