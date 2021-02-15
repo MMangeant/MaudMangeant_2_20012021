@@ -684,3 +684,22 @@ footer li{
 
 
 }
+
+
+@media all and (max-width: 768px){
+
+    
+    #section2{
+        flex-direction: column-reverse;
+    }
+
+    aside{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    article{
+        width: 100%;
+    }
+
+}
