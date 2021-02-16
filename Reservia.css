@@ -385,14 +385,14 @@ aside{
 
 .hebergement_pop_img img{
     border-radius: 20px 0 0 20px;
-    width: 100px;
+    width: 140px;
     height: 100%;
     object-fit: cover;
 }
 
 .hebergement_pop_texte{
     padding-left: 30px;
-    padding-right: 40px;
+    padding-right: 30px;
 }
 
 #titre_aside{
@@ -604,6 +604,7 @@ footer li{
 
 /*      Section 2     */
 
+
     article{
         background-color: #F2F2F2;
         border-radius: 30px;
@@ -686,7 +687,7 @@ footer li{
 }
 
 
-@media all and (max-width: 768px){
+@media all and (max-width: 768px) and (min-width: 480px){
 
     
     #section2{
@@ -700,6 +701,10 @@ footer li{
 
     article{
         width: 100%;
+    }
+
+    .hebergement_pop_img img{
+        width: 250px;
     }
 
 }
