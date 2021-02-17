@@ -23,6 +23,9 @@ gris fond : #F2F2F2
 /* ==              BODY               */
 /*---------------------------------------- */
 
+/* *{
+    box-sizing: border-box;
+}  */
 
 body{
     background-color: white;
@@ -109,23 +112,34 @@ nav a:hover{
 }
 
 
-nav li:nth-child(1):hover::before{
+#nav1 li:nth-child(1):hover::before{
     content: "";
     border-bottom: 2px solid #0065FC;
     width: 50%;
     position: absolute;
-    top: 44px;
+    top: 33px;
     left: 0;
 }
 
-nav li:nth-child(2):hover::before{
+#nav1 li:nth-child(2):hover::before{
     content: "";
     border-bottom: 2px solid #0065FC;
     width: 50%;
     position: absolute;
-    top: 44px;
+    top: 33px;
     right: 0;
 }
+
+/* #nav2 li:hover::before{
+    content: "";
+    border-bottom: 2px solid #0065FC;
+    width: 37%;
+    position: absolute;
+    top: 0px;
+    right: 0;
+} */
+
+
 
 
 nav li{
@@ -521,14 +535,14 @@ footer li{
     nav a{
         text-decoration: none;
         color: grey;
-        padding: 33px 25px 0 25px;
+        padding: 22px 25px 0 25px;
     }
     
     nav a:hover{
         text-decoration: none;
         border-top : 2px solid #0065FC;
         border-bottom : none;
-        padding: 22px 20px 0 20px;
+        padding: 22px 25px 0 25px;
         color: #0065FC;
     }
     
