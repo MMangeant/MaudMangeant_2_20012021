@@ -173,11 +173,11 @@ nav li{
 /*---------------------------------------- */
 
 
-/*      Section 1     */
+/*      Partie 1     */
 
 
 
-#section1 h1{
+#partie1 h1{
     padding-top: 70px;
 }
 
@@ -334,7 +334,7 @@ nav li{
 }
 
 
-/*      Section 2     */
+/*      Partie 2     */
 
 #afficher_plus{
     font-weight: bold;
@@ -416,7 +416,7 @@ aside{
     align-items: baseline;
 }
 
-/*      Section 3     */
+/*      Partie 3     */
 
 .cartouche_activite{
     background-color: white;
@@ -562,18 +562,18 @@ footer li{
 
 
 
-/*      Section 1     */
+/*      Partie 1     */
 
-    #section1{
+    #partie1{
         padding: 0 0;
     }
 
-    #section1 h1{
+    #partie1 h1{
         padding-top: 20px;
         margin-bottom: 0;
     }
 
-    #section1 p{
+    #partie1 p{
         margin-bottom: 15px;
     }
 
@@ -582,7 +582,7 @@ footer li{
         margin: 0;
     }
 
-    #section1 .container_general{
+    #partie1 .container_general{
         padding: 0;
     }
 
@@ -622,10 +622,10 @@ footer li{
         margin: 0;
     }
 
-/*      Section 2     */
+/*      Partie 2     */
 
 
-    article{
+    #article{
         background-color: #F2F2F2;
         border-radius: 30px;
         order: 1;
@@ -637,7 +637,7 @@ footer li{
         justify-content: space-between; 
     }
 
-    #section2{
+    #partie2{
         display: flex;
         justify-content: space-between;
     }
@@ -657,7 +657,7 @@ footer li{
         width: 32%;
     } 
 
-/*      Section 3     */
+/*      Partie 3     */
     
     .cartouche_activite{
         width: 90%;
@@ -699,7 +699,7 @@ footer li{
         height: 200px;
     }
 
-    #section3 .container_general{
+    #partie3 .container_general{
         padding: 20px 0;
     }
 
@@ -720,16 +720,13 @@ footer li{
     }
 
 
-
-
-
 }
 
 
 @media all and (max-width: 768px) and (min-width: 480px){
 
     
-    #section2{
+    #partie2{
         flex-direction: column-reverse;
     }
 
@@ -738,12 +735,34 @@ footer li{
         margin-bottom: 20px;
     }
 
-    article{
+    #article{
         width: 100%;
     }
 
+   #hebergements_pop{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cartouche_hebergement_pop{
+        flex-direction: column;
+        width: 29%;
+        height: auto;
+    }
+
     .hebergement_pop_img img{
-        width: 250px;
+        border-radius: 20px 20px 0 0px;
+        width: 100%;
+        height: 110px;
+    }
+
+    .hebergement_pop_texte{
+        padding: 5%;
+    }
+
+    .hebergement_pop_texte h3{
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 
     #container_activites{
