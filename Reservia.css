@@ -250,6 +250,15 @@ nav li{
     left: 0;
 }
 
+.picto_filtres:hover{
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+}
+
+.fas:hover{
+    color:  #DEEBFF;
+}
+
 .filtre p{
     padding : 10px 20px 10px 55px;
     font-weight: bold;
