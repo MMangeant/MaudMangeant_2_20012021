@@ -482,11 +482,6 @@ aside{
     margin: 6%;
 }
 
-.container_1_activites{
-    display: flex;
-    justify-content: center;
-}
-
 .container_2_activites{
     display: flex;
     flex-direction: column;
@@ -710,17 +705,11 @@ footer li:hover{
 
 /*      Partie 3     */
     
-    .cartouche_activite{
-        width: 90%;
-    }
 
-    .container_2_activites{
-        align-items: center;
-    }
-    
     #container_activites{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 30px;
         width: 100%;
     }
 
@@ -750,10 +739,6 @@ footer li:hover{
 
     #partie3 .container_general{
         padding: 20px 0;
-    }
-
-    #partie3 h2{
-        padding-left: 30px;
     }
 
     .activite_img img{
