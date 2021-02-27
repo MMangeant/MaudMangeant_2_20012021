@@ -49,15 +49,15 @@ body{
 }
 
 h1{
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 h2{
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 h3{
-    font-size: 17px;
+    font-size: 1.2em;
 }
 
 /* ---------------------------------------- */
@@ -436,14 +436,14 @@ aside{
 
 .hebergement_pop_img img{
     border-radius: 20px 0 0 20px;
-    width: 140px;
+    width: 35vw;
     height: 100%;
     object-fit: cover;
 }
 
 .hebergement_pop_texte{
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 #titre_aside{
@@ -480,6 +480,11 @@ aside{
 
 .cartouche_activite h3{
     margin: 6%;
+}
+
+.container_1_activites{
+    display: flex;
+    justify-content: center;
 }
 
 .container_2_activites{
@@ -687,8 +692,13 @@ footer li:hover{
         width: 29%;
     }
 
-    .cartouche_hebergement_pop{
-        /*width: 330px;*/
+    .hebergement_pop_img img{
+        width: 10vw;
+    }
+
+    .hebergement_pop_texte{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     aside{
@@ -705,9 +715,7 @@ footer li:hover{
     }
 
     .container_2_activites{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
     }
     
     #container_activites{
@@ -742,6 +750,10 @@ footer li:hover{
 
     #partie3 .container_general{
         padding: 20px 0;
+    }
+
+    #partie3 h2{
+        padding-left: 30px;
     }
 
     .activite_img img{
@@ -817,6 +829,8 @@ footer li:hover{
 }
 
 
+
+
 @media all and (max-width: 1240px) and (min-width: 1025px){
 
     #article{
@@ -827,8 +841,4 @@ footer li:hover{
         width: 37%;
     }
 
-    .hebergement_pop_img img{
-        width: 120px;
-    }
-    
 }
