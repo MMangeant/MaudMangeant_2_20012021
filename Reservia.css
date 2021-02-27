@@ -764,7 +764,7 @@ footer li:hover{
 }
 
 
-@media all and (max-width: 768px) and (min-width: 480px){
+@media all and (max-width: 1024px) and (min-width: 480px){
 
     
     #partie2{
@@ -817,54 +817,18 @@ footer li:hover{
 }
 
 
-@media all and (max-width: 1240px) and (min-width: 768px){
+@media all and (max-width: 1240px) and (min-width: 1025px){
 
-    
-    #partie2{
-        flex-direction: column-reverse;
+    #article{
+        width: 60%;
     }
 
     aside{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    #article{
-        width: 100%;
-    }
-
-   #hebergements_pop{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .cartouche_hebergement_pop{
-        flex-direction: column;
-        width: 29%;
-        height: auto;
+        width: 37%;
     }
 
     .hebergement_pop_img img{
-        border-radius: 20px 20px 0 0px;
-        width: 100%;
-        height: 110px;
+        width: 120px;
     }
-
-    .hebergement_pop_texte{
-        padding: 5%;
-    }
-
-    .hebergement_pop_texte h3{
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    #container_activites{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    #activite4{
-        order: 1;
-    }
+    
 }
