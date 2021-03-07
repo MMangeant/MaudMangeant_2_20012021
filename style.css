@@ -23,10 +23,6 @@ gris fond : #F2F2F2
 /* ==              BODY               */
 /*---------------------------------------- */
 
-/* *{
-    box-sizing: border-box;
-}  */
-
 *{
     scroll-behavior: smooth;
 }
@@ -101,7 +97,6 @@ nav a{
 
 nav a:hover{
     text-decoration: none;
-    /*border-bottom : 2px solid #0065FC;*/
     padding: 0 20px 26px 20px;
     color: #0065FC;
 }
@@ -134,23 +129,6 @@ nav a:hover{
     right: 0;
 }
 
-/* #nav2 li:hover::before{
-    content: "";
-    border-bottom: 2px solid #0065FC;
-    width: 37%;
-    position: absolute;
-    top: 0px;
-    right: 0;
-} */
-
-
-
-
-nav li{
-    /* padding-top: 10px; */
-}
-
-
 #nav2{
     font-weight: bold;
     color: #0065FC;
@@ -171,7 +149,6 @@ nav li{
 
 
 
-
 /* ---------------------------------------- */
 /* ==              SECTIONS               */
 /*---------------------------------------- */
@@ -180,8 +157,7 @@ nav li{
 /*      Partie 1     */
 
 
-
-#partie1 h1{
+#texte-partie1{
     padding-top: 50px;
 }
 
@@ -456,7 +432,6 @@ aside{
 
 .cartouche_activite{
     background-color: white;
-    /*padding: 5px;*/
     border-radius: 20px; 
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .1);
     margin-bottom: 20px;
@@ -589,10 +564,6 @@ footer li:hover{
         padding: 22px 25px 0 25px;
         color: #0065FC;
     }
-    
-    nav li{
-        /* margin-left: 30px; */
-    }
 
     #nav1::before{
         content: "";
@@ -613,10 +584,13 @@ footer li:hover{
     }
 
     #partie1 h1{
-        padding-top: 20px;
         margin-bottom: 0;
     }
 
+    #texte-partie1{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
 
     #formulaire_recherche{
         width: 400px;
@@ -809,9 +783,14 @@ footer li:hover{
         grid-row-gap: 10px;
     }
 
-    #activite4{
+    #colonne_activite3{
+        order: 2;
+    }
+
+    #colonne_activite4{
         order: 1;
     }
+
 }
 
 
@@ -827,4 +806,20 @@ footer li:hover{
         width: 37%;
     }
 
+}
+
+@media all and (max-width: 525px) and (min-width: 480px){
+
+    nav a{
+        padding: 22px 15px 0 15px;
+    }
+
+}
+
+@media all and (max-width: 1170px) and (min-width: 1025px){
+    
+    #activite4_img img{
+        height: 380px;
+    }
+    
 }
