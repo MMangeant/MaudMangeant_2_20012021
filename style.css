@@ -732,7 +732,9 @@ footer li:hover{
 
     #container_footer{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        width: 70%;
+        padding: 2.5% 3% 2% 3%;
     }
 
 
@@ -830,3 +832,25 @@ footer li:hover{
     }
     
 }
+
+@media all and (max-width: 900px) and (min-width: 480px){
+    
+    #container_footer{
+        width: 90%;
+    }
+    
+}
+
+@media all and (max-width: 600px) and (min-width: 480px){
+    
+    #container_footer{
+        width: 95%;
+    }
+    
+}
+
+
+
+
+
+
